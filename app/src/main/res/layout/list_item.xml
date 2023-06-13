@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_margin="20dp"
+    android:background="@drawable/news_layout_bg"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        tools:ignore="UseCompoundDrawables">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:cardCornerRadius="100dp">
+        <ImageView
+            android:id="@+id/authorAvatarResource"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars"
+            android:contentDescription="@string/app_name" />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/authorName"
+            android:textColor="@color/white"
+            android:text="Author"
+            android:gravity="left"
+            android:paddingLeft="15dp"
+            android:textSize="20sp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/postText"
+        android:textColor="@color/white"
+        android:text="@string/material_motion_easing_emphasized"
+        android:paddingBottom="10dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:scaleType="fitCenter"
+        android:id="@+id/imageResource"
+        tools:srcCompat="@tools:sample/backgrounds/scenic"
+        android:layout_height="200dp"
+        android:contentDescription="@string/app_name" />
+
+</LinearLayout>
